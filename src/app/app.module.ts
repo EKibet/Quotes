@@ -7,6 +7,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FormsModule } from "@angular/forms";
 import { QuotesDetailsComponent } from './quote-details/quote-details.component';
 import { HighlightDirective } from './highlight.directive';
+import { TimeAgoPipe } from './time-ago.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HighlightDirective } from './highlight.directive';
     NewQuoteComponent,
     LandingPageComponent,
     QuotesDetailsComponent,
-    HighlightDirective
+    HighlightDirective,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,
