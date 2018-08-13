@@ -2,9 +2,31 @@
 <div class="container-fluid">
   <div class="row" id="quote">
          <div class="col-md-3 quote"  *ngFor="let quote of quotes; let i =index" [id]="i" ng>
+           <ul class="rating">
+             <li class="col-md-6" class="text-success" apphighlight *ngIf="highestVotedQuote(quote.id)">Quote of the day
+             </li>
+             <li>
+               <button type="button" class="trash" (click)="deleteQuote()" class="btn btn-default btn-sm">
+                 <span class="glyphicon glyphicon-trash" ></span>
+                </button>
+             </li>
+           </ul>
              <span class="main">{{quote.Quote}}</span>
              <h4 class="text-right author">~ {{quote.AuthorName}}</h4>
              <h4>Submitted by {{quote.Username}} </h4>
+             <ul class="rating">
+                 <li>
+                     <button type="button" (click)="quote.upVote()" class="btn btn-default btn-sm">
+                         <span class="glyphicon glyphicon-thumbs-up" ><sup>{{quote.upVotes}}</sup></span>
+                        </button>
+                 </li>
+                 <li>
+                     <button type="button" (click)="quote.downVote()" class="btn btn-default btn-sm">
+                         <span class="glyphicon glyphicon-thumbs-down"  ><sup>{{quote.downVotes}}</sup></span>
+                       </button>
+                 </li>
+               </ul>
+             <h6>{{quote.time | timeAgo}}</h6>
 
        </div>
      </div>
