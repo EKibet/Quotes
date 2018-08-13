@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NewQuoteComponent } from './new-quote/new-quote.component';
 import { NewDetailsComponent } from './new-details/new-details.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     LandingPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

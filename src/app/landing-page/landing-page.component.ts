@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent implements OnInit {
-  title = 'Quotes';
+
+toggleForm = false;
+formToggle() {
+  this.toggleForm = !this.toggleForm;
+}
   constructor() { }
 
   ngOnInit() {
