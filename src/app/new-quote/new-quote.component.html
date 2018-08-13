@@ -1,0 +1,51 @@
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-md-3">
+          <h1>Quotes</h1>
+      </div>
+      <div class="col-md-3">
+
+      </div>
+      <div class="col-md-3">
+
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-8">
+          <div class="row">
+              <div class="col-md-3">
+                  <button class="btn btn-info" (click)='formToggle()'>Add Quote</button>
+              </div>
+          </div>
+      </div>
+      <form class="form-group" (ngSubmit)="addQuote()"  *ngIf='toggleForm'>
+          <div class="list-group">
+              <div class="row">
+                  <div class="col-md-12 ">
+                      <li class='list-group-item'>
+                        <textarea rows="3" id="qoute" class="input-lg form-control" name="quoteInput" placeholder="Quote" [(ngModel)]="this.newQuote.Quote" required></textarea>
+                      </li>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-4">
+                      <li class='list-group-item'>
+                        <input id="Author" class="form-control" name="authorInput" placeholder="Author" [(ngModel)]="this.newQuote.AuthorName" required>
+                      </li>
+                  </div>
+                  <div class="col-md-4">
+                      <li class='list-group-item'>
+                        <input id="Name" class="form-control" name="secretary" placeholder="Your name" [(ngModel)]="this.newQuote.Username" required>
+                      </li>
+                  </div>
+                  <div class="col-md-4">
+                      <li class='list-group-item'>
+                          <button class="btn btn-info">Add Quote</button>
+                      </li>
+                  </div>
+              </div>
+          </div>
+      </form>
+  </div>
