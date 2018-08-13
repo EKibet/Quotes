@@ -1,12 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
-import {Quotes} from '../quotes';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-quotes-details',
-  templateUrl: './quotes-details.component.html',
-  styleUrls: ['./quotes-details.component.css']
+  selector: 'app-quote-details',
+  templateUrl: './quote-details.component.html',
+  styleUrls: ['./quote-details.component.css']
 })
-export class QuotesDetailsComponent implements OnInit {
+export class QuoteDetailsComponent implements OnInit {
   @Input() quotes = Array<Quotes>();
 
   constructor() { }
