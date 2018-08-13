@@ -1,0 +1,34 @@
+.glyphicon-thumbs-down, .glyphicon-thumbs-up{
+  color: #3498DB;
+}
+.rating li{
+  display:inline-block;
+  text-decoration: none;
+}
+.glyphicon-trash{
+  color: red;
+}
+.thrash{
+  margin-left: 200px;
+}
+.quote_id{
+  height: 40px;
+  width: 40px;
+  background-color: darkslateblue;
+  text-align: center;
+  border-radius: 50%;
+
+}
+.quote_text{
+  margin-top: 50px;
+  color: #fff;
+  padding-top: 40px;
+}
+.quote{
+  background-color: #3498DB;
+  margin: 2px 4px;
+}
+#quote{
+  text-align: center;
+  margin-left: 15%;
+}
