@@ -1,3 +1,11 @@
-<p>
 
-</p>
+<div class="container-fluid">
+  <div class="row" id="quote">
+         <div class="col-md-3 quote"  *ngFor="let quote of quotes; let i =index" [id]="i" ng>
+             <span class="main">{{quote.Quote}}</span>
+             <h4 class="text-right author">~ {{quote.AuthorName}}</h4>
+             <h4>Submitted by {{quote.Username}} </h4>
+
+       </div>
+     </div>
+  </div>
