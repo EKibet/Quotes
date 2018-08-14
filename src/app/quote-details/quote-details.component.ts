@@ -13,7 +13,7 @@ export class QuotesDetailsComponent implements OnInit {
   highestVotedQuote(id) {
     this.templist = this.quotes.slice();
     this.templist.sort((a,b) => b.average() - a.average());
-    if (this.templist[0].id == id && this.templist[0].average() > 0) {
+    if (this.templist[0].id === id && this.templist[0].average() > 0) {
       return true;
     }
     return false;
